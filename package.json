@@ -1,12 +1,13 @@
 {
   "name": "linux-command",
-  "version": "1.2.2",
+  "version": "1.5.1",
   "description": "Linux Command",
   "main": "dist/data.json",
   "scripts": {
     "start": "npm run build && npm run deploy",
     "build": "node build/build.js",
-    "deploy": "node build/deploy.js"
+    "deploy": "node build/deploy.js",
+    "dash": "npm run build && node build/dash.js"
   },
   "files": [
     "command",
@@ -28,12 +29,14 @@
     "ejs": "^2.6.1",
     "fs-extra": "^7.0.0",
     "gh-pages": "^2.0.0",
-    "loading-cli": "^1.0.8",
-    "marked": "^0.5.1",
+    "loading-cli": "^1.1.0",
+    "marked": "^0.6.3",
     "path": "^0.12.7",
-    "prismjs": "^1.15.0",
-    "stylus": "^0.54.5",
-    "uglify-js": "^3.4.9"
+    "prismjs": "^1.19.0",
+    "sitemap-generator": "^8.4.2",
+    "sqlite3": "^4.1.1",
+    "stylus": "^0.54.7",
+    "uglify-js": "^3.8.0"
   },
   "dependencies": {},
   "bugs": {
